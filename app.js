@@ -5,7 +5,11 @@ const userRoute = require("./routes/user.route")
 const newsRoute = require("./routes/news.route")
 
 const app = express()
-app.use(cors())
+
+const corsOptions = {
+    origin: 'http://localhost:4200' // Allow only this origin to access
+  }
+app.use(cors(corsOptions))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
