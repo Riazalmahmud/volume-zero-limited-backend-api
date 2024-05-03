@@ -10,7 +10,7 @@ const corsOptions = {
     origin: function (origin, callback) {
         const allowedOrigins = [
           "http://localhost:4200",
-          "https://6633cf822a601d1e3ea58127--coruscating-daifuku-2c25dc.netlify.app/",
+          "https://coruscating-daifuku-2c25dc.netlify.app/",
         ];
         if (!origin || allowedOrigins.indexOf(origin) !== -1) {
             callback(null, true)
