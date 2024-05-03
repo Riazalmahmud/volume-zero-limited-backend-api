@@ -15,7 +15,7 @@ const NewsSchema = mongoose.Schema(
       required: false,
       lowercase: true,
       validate: [validator.isURL],
-      unique: true
+  
     },
     postImage: {
       type: String,
